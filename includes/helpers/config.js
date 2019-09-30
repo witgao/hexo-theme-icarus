@@ -26,11 +26,12 @@ module.exports = function (hexo) {
         const value = readProperty(Object.assign({}, this.config, hexo.theme.config,
             !excludePage ? this.page : {}), configName);
         if (value === null) {
-            if (typeof(defaultValue) !== 'undefined') {
+            if (typeof (defaultValue) !== 'undefined') {
                 return defaultValue;
             } else {
                 const property = readProperty(specs, configName);
-                return property === null ? null : property[descriptors.defaultValue];
+                const result = property === null ? null : property[descriptors.defaultValue];
+                return (configName === 'toc' && this.page.layout === 'post' && result === null) ? true : result;
             }
         }
         return value;
