@@ -25,11 +25,11 @@ open_graph:
 navbar:
     # Navigation bar menu links
     menu:
-        Home: /
-        Archives: /archives
-        Categories: /categories
-        Tags: /tags
-        About: /about
+        燕子坞: /
+        听香水榭: /archives
+        还施水阁: /categories
+        # Tags: /tags
+        思过崖: /about
     # Navigation bar links to be shown on the right
     links:
         Download on GitHub:
@@ -121,7 +121,7 @@ widgets:
         # Author name to be shown in the profile widget
         author: zhenyu
         # Title of the author to be shown in the profile widget
-        author_title: 纸上得来终觉浅，绝知此事要躬行
+        author_title: 富贵山庄无富贵，只留欢乐在此间
         # Author's current location to be shown in the profile widget
         location: 杭州
         # Path or URL to the avatar to be shown in the profile widget
